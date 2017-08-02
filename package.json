@@ -1,0 +1,21 @@
+{
+  "name": "pip-counter",
+  "version": "0.0.1",
+  "description": "pip counter for backgammon",
+  "scripts": {
+    "dev": "babel-node scripts/count.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Backgammon-Bandits/pip-counter.git"
+  },
+  "author": "Laszlo Heves <heves.laszlo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Backgammon-Bandits/pip-counter/issues"
+  },
+  "homepage": "https://github.com/Backgammon-Bandits/pip-counter#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1"
+  }
+}
