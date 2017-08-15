@@ -1,7 +1,7 @@
 const state = require('../fixtures/state')
 
 /**
- * 
+ * Count checkers in game based on the user's type
  * @param {string} userType player || opponent
  * @param {array} state game state
  * @return {number}
@@ -16,13 +16,31 @@ function countPip(userType, state) {
 }
 
 /**
- * Returns a new object based on the input value
- * @param {object} state original state
+ * Return a new object based on the input value
+ * @param {object} state initial state
  * @return {object} new state object
  */
 function immutableObject(state) {
     return Object.assign({}, state)
 }
+/**
+ * Return an empty state objects
+ * @param {object} state initial state
+ * @return {object} new state
+ */
+function emptyState(state) {
+    let currentState = immutableObject(state)
 
-console.log('player: ', countPip('player', state))
-console.log('opponent: ', countPip('opponent', state))
+    for (let item of Object.keys(currentState)) {
+        currentState[item] = {}
+    }
+
+    return currentState
+}
+
+function printPip(userType) {
+    console.log(`${userType}: ${countPip(userType, state)}`)
+}
+
+printPip('player')
+printPip('opponent')
