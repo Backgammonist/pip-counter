@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "pip counter for backgammon",
   "scripts": {
-    "dev": "babel-node scripts/count.js"
+    "count": "babel-node scripts/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/Backgammon-Bandits/pip-counter#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1"
+    "babel-cli": "^6.24.1",
+    "lodash": "^4.17.4"
   }
 }
