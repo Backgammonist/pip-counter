@@ -4,7 +4,7 @@
   "description": "pip counter for backgammon",
   "scripts": {
     "count": "babel-node scripts/index.js",
-    "test": "jest --coverage",
+    "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
   },
