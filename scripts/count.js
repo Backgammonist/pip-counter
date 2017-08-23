@@ -74,8 +74,6 @@ function shuffle(secondRun, state) {
 
     if (!secondRun) {
         shuffle(true, currentState)
-    } else {
-        console.log(currentState)
     }
 
     return currentState
@@ -105,5 +103,6 @@ function printPip(userType, state) {
 
 module.exports = {
     printPip,
-    shuffle
+    shuffle,
+    emptyState
 }

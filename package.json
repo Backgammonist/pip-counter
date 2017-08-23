@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "pip counter for backgammon",
   "scripts": {
-    "count": "babel-node scripts/index.js"
+    "count": "babel-node scripts/index.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,9 @@
   "homepage": "https://github.com/Backgammon-Bandits/pip-counter#readme",
   "devDependencies": {
     "babel-cli": "^6.24.1",
+    "babel-jest": "^20.0.3",
+    "babel-preset-es2015": "^6.24.1",
+    "jest": "^20.0.4",
     "lodash": "^4.17.4"
   }
 }
