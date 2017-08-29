@@ -1,5 +1,8 @@
-const INITIAL_STATE = require('../fixtures/state');
-const _ = require('lodash');
+import INITIAL_STATE from '../fixtures/state';
+import {
+    isEmpty as _isEmpty,
+    shuffle as _shuffle
+} from 'lodash';
 
 const MAX_CHECKER_ON_POS = 6;
 
@@ -60,7 +63,7 @@ function emptyState(state) {
  * @param {boolean} secondRun has to run twice (player, opponent)
  * @param {object} state game state
  */
-function shuffle(secondRun, state) {
+export function shuffle(secondRun, state) {
     const userType = secondRun ? 'opponent' : 'player';
     let checkerCount = 15;
     let currentState = state || emptyState(INITIAL_STATE);
@@ -94,15 +97,9 @@ function getCheckersOnPos(checkerCount) {
  * @return {number} key of the slot
  */
 function findRandEmpty(state) {
-    return _.shuffle(Object.keys(state)).find(key => _.isEmpty(state[key]));
+    return _shuffle(Object.keys(state)).find(key => _isEmpty(state[key]));
 }
 
-function printPip(userType, state) {
+export function printPip(userType, state) {
     return `${userType}: ${countCheckers(userType, state)} | ${countPip(userType, state)}`;
 }
-
-module.exports = {
-    printPip,
-    shuffle,
-    emptyState
-};
