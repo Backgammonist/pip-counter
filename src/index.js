@@ -1,5 +1,7 @@
 /* eslint no-console: "off" */
 
+require('offline-plugin/runtime').install();
+
 const count = require('./count');
 
 let mainState = count.shuffle();
