@@ -25,8 +25,9 @@
     "babel-cli": "^6.24.1",
     "babel-jest": "^20.0.3",
     "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "clean-webpack-plugin": "^0.1.16",
-    "eslint": "^4.5.0",
+    "eslint": "^4.6.1",
     "eslint-plugin-react": "^7.3.0",
     "html-webpack-plugin": "^2.30.1",
     "husky": "^0.14.3",
@@ -35,5 +36,10 @@
     "offline-plugin": "^4.8.3",
     "webpack": "^3.5.5",
     "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   }
 }

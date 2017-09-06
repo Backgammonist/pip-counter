@@ -11,14 +11,27 @@ module.exports = {
     entry: './src/index.js',
 
     devtool: 'inline-source-map',
+
     devServer: {
         contentBase: './dist',
         hot: true
     },
 
+    output: {
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, 'dist')
+    },
+
+    module: {
+        loaders: [
+            { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ }
+        ]
+    },
+
     plugins: ([
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
+            template: 'index.template.ejs',
             title: constants.GAME_TITLE
         }),
         new webpack.HotModuleReplacementPlugin()
@@ -39,9 +52,5 @@ module.exports = {
             ],
             publicPath: '/'
         })
-    ] : []),
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
-    }
+    ] : [])
 };
