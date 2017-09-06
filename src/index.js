@@ -1,12 +1,6 @@
-/* eslint no-console: "off" */
-
 require('offline-plugin/runtime').install();
 
-const count = require('./count');
+import {render} from 'react-dom';
+import App from './components/App';
 
-let mainState = count.shuffle();
-
-console.log('state', mainState);
-
-console.log(count.printPip('player', mainState));
-console.log(count.printPip('opponent', mainState));
+render(<App/>, document.getElementById('app'));
