@@ -4,7 +4,7 @@ import {
     shuffle as _shuffle
 } from 'lodash';
 
-const MAX_CHECKER_ON_POS = 6;
+const MAX_CHECKER_ON_POS = 4;
 
 /**
  * Count the point value of checkers in game based on the user's type

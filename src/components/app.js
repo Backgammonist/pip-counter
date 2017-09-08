@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './App.css';
+import {shuffle} from '../count';
 
-export default class App extends React.Component {
-    render () {
-        return <p> Hello React!</p>;
+import Board from './Board.js';
+
+
+const initialState = shuffle();
+
+export default class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <Board {...initialState} />
+            </div>
+        );
     }
 }
