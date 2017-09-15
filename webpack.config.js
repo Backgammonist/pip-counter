@@ -41,6 +41,7 @@ module.exports = {
             relativePaths: false,
             AppCache: false,
             excludes: ['_redirects'],
+            publicPath: '/pip-counter/',
             ServiceWorker: {
                 events: true
             },
