@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import React, { PureComponent } from 'react';
 
 import Checker from './checkers/Checker';
@@ -7,10 +9,12 @@ class Field extends PureComponent {
     render() {
         const {
             ordinal,
+            player,
+            opponent
         } = this.props;
 
         let checkers = [];
-        if (this.props.player || this.props.opponent) {
+        if (player || opponent) {
             const playerType = this.props.player ? 'player' : 'opponent';
             for (var index = 0; index <this.props[playerType];  index++ ) {
                 checkers.push(<Checker key={index} playerType={playerType} />);
@@ -27,5 +31,11 @@ class Field extends PureComponent {
         );
     }
 }
+
+Field.propTypes = {
+    ordinal: PropTypes.number,
+    player: PropTypes.object,
+    opponent: PropTypes.object
+};
 
 export default Field;
