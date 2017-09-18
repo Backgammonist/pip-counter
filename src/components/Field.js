@@ -33,9 +33,9 @@ class Field extends PureComponent {
 }
 
 Field.propTypes = {
-    ordinal: PropTypes.number,
-    player: PropTypes.object,
-    opponent: PropTypes.object
+    ordinal: PropTypes.string,
+    player: PropTypes.number,
+    opponent: PropTypes.number
 };
 
 export default Field;
