@@ -1,23 +1,23 @@
 var __wpo = {
   "assets": {
     "main": [
-      "/bundle.js",
-      "/"
+      "./bundle.js",
+      "./"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
-    "e960a0e3faf82f214cae5de59b6743844f1cdf8b": "/bundle.js",
-    "a0f53bd079190eeccd42c0388a650b0eba9565e9": "/"
+    "7382564fa89e4e5d6dd375dce727b8781181d1ef": "./bundle.js",
+    "a0f53bd079190eeccd42c0388a650b0eba9565e9": "./"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "9/15/2017, 5:14:38 PM",
+  "version": "9/18/2017, 2:14:23 PM",
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
-  "relativePaths": false
+  "relativePaths": true
 };
 
 /******/ (function(modules) { // webpackBootstrap

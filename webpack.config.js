@@ -38,10 +38,8 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin()
     ]).concat(ENV==='production' ? [
         new OfflinePlugin({
-            relativePaths: false,
             AppCache: false,
             excludes: ['_redirects'],
-            publicPath: '/pip-counter/',
             ServiceWorker: {
                 events: true
             },
@@ -51,8 +49,7 @@ module.exports = {
                     to: '/',
                     requestTypes: ['navigate']
                 }
-            ],
-            publicPath: '/'
+            ]
         })
     ] : [])
 };
