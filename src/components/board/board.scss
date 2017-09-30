@@ -28,6 +28,7 @@
         position: absolute;
         width: $bar-width;
         height: $max-height;
+        top: 0;
         left: calc(50% - #{$bar-width}/2);
         background: white;
     }
