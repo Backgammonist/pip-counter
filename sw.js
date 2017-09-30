@@ -2,6 +2,7 @@ var __wpo = {
   "assets": {
     "main": [
       "./bundle.js",
+<<<<<<< HEAD
       "./",
       "./manifest.501854035524de55e07e1f9fa19515dd.json",
       "./icon_512x512.a76d05add019945db69ecd0c569fc83d.png",
@@ -10,12 +11,16 @@ var __wpo = {
       "./icon_192x192.205b68611876f5f4ad655ce0169f85ab.png",
       "./icon_128x128.3765ae3ce8bd605e0d8a36fb695aac29.png",
       "./icon_96x96.e156c7f28997b56dd2b9193ff6696c89.png"
+=======
+      "./"
+>>>>>>> WIP - add dist
     ],
     "additional": [],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
+<<<<<<< HEAD
     "26083cc0006cff32fe664e9d146df8d9f89f9432": "./bundle.js",
     "8af2f269bad5fed95e0edbf2f91dacb6395014d4": "./",
     "2094457959047142b47b7fd1bd19f6c0912bc171": "./manifest.501854035524de55e07e1f9fa19515dd.json",
@@ -29,6 +34,14 @@ var __wpo = {
   "strategy": "changed",
   "responseStrategy": "cache-first",
   "version": "9/20/2017, 3:58:02 PM",
+=======
+    "c1d1d0c3bc0850a21b441d15d4624e4bb14fedc9": "./bundle.js",
+    "193de2931038b81ab2c567c432409a0b39baa799": "./"
+  },
+  "strategy": "changed",
+  "responseStrategy": "cache-first",
+  "version": "30/09/2017, 22:14:12",
+>>>>>>> WIP - add dist
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
   "relativePaths": true
