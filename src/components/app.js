@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-import {shuffle} from '../count';
+import {shuffle} from '../services/count';
 
-import Board from './Board.js';
+import Board from './board';
 
+require('./App.scss');
 
 const initialState = shuffle();
 

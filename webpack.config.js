@@ -16,7 +16,8 @@ module.exports = {
 
     devServer: {
         contentBase: './dist',
-        hot: true
+        hot: true,
+        host: '0.0.0.0'
     },
 
     output: {
@@ -27,7 +28,8 @@ module.exports = {
     module: {
         rules: [
             { test: /\.js$/, use: 'babel-loader', exclude: /node_modules/ },
-            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]}
+            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
+            { test: /\.scss$/, use: [ 'style-loader', 'css-loader', 'sass-loader' ]}
         ]
     },
 

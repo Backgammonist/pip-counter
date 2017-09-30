@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.checker {
+    width: $checker-size;
+    height: $checker-size;
+    border-radius: 100%;
+
+    + .checker {
+        margin-top: -5px;
+    }
+
+    &__player {
+        background-color: white;
+        border: 1px solid $bgr-dark;
+    }
+    
+    &__opponent {
+        background-color: $bgr-dark;        
+        border: 1px solid white;
+    }
+}
