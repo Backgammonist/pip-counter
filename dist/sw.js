@@ -2,46 +2,33 @@ var __wpo = {
   "assets": {
     "main": [
       "./bundle.js",
-<<<<<<< HEAD
       "./",
-      "./manifest.501854035524de55e07e1f9fa19515dd.json",
-      "./icon_512x512.a76d05add019945db69ecd0c569fc83d.png",
-      "./icon_384x384.0e48f7dcdb43fe0c969d3006b492e207.png",
-      "./icon_256x256.ab5a43fd4a3b3128855cf31d11169d52.png",
-      "./icon_192x192.205b68611876f5f4ad655ce0169f85ab.png",
-      "./icon_128x128.3765ae3ce8bd605e0d8a36fb695aac29.png",
-      "./icon_96x96.e156c7f28997b56dd2b9193ff6696c89.png"
-=======
-      "./"
->>>>>>> WIP - add dist
+      "./manifest.d16933013fc11607a4e8612ffe428819.json",
+      "./icon_512x512.aeda15d8739b8d42b64ceab65d3fbcb2.png",
+      "./icon_384x384.a32836929b57cfa5e431a1bc13211472.png",
+      "./icon_256x256.1967c3ebb28adf8078d6f5499babb6ba.png",
+      "./icon_192x192.26f6854d66c3e6bb6eb4078870125f7b.png",
+      "./icon_128x128.b0e233c7fe08ed06ec948e8dac1ca9fb.png",
+      "./icon_96x96.88af0d92fd935ecf067ca52a28d38246.png"
     ],
     "additional": [],
     "optional": []
   },
   "externals": [],
   "hashesMap": {
-<<<<<<< HEAD
-    "26083cc0006cff32fe664e9d146df8d9f89f9432": "./bundle.js",
-    "8af2f269bad5fed95e0edbf2f91dacb6395014d4": "./",
-    "2094457959047142b47b7fd1bd19f6c0912bc171": "./manifest.501854035524de55e07e1f9fa19515dd.json",
-    "3bdd4ff1a6bf9d1688185d3cfb7c700b3e77a3ad": "./icon_512x512.a76d05add019945db69ecd0c569fc83d.png",
-    "e025f4e2a23f6a17e667cdc19bb3ce040b6fe68a": "./icon_384x384.0e48f7dcdb43fe0c969d3006b492e207.png",
-    "3636f4796bab7f2189a7c3e8dbb31e100d4c5f31": "./icon_256x256.ab5a43fd4a3b3128855cf31d11169d52.png",
-    "49659b48634ed13dbbd96bbf7c678614366c8992": "./icon_192x192.205b68611876f5f4ad655ce0169f85ab.png",
-    "6e4fc9ccc8e8449db29d778c03d76c299871ebd2": "./icon_128x128.3765ae3ce8bd605e0d8a36fb695aac29.png",
-    "eded25a481b9db3db646b7200dcd2a62aeb61ef2": "./icon_96x96.e156c7f28997b56dd2b9193ff6696c89.png"
+    "126069e84f081bcc6fd7d6d8f62428696f04e26b": "./bundle.js",
+    "623adf4c40be339634b0b5646640e0998d921f10": "./",
+    "95bdc696e1afa24c010f0fdc23a8b3c2e1fed03c": "./manifest.d16933013fc11607a4e8612ffe428819.json",
+    "0d29865083dad94ffc8bb4c798efeef3d11ae04a": "./icon_512x512.aeda15d8739b8d42b64ceab65d3fbcb2.png",
+    "d2c63e6c7772fb0738d9c059b0ab6554694cb1f2": "./icon_384x384.a32836929b57cfa5e431a1bc13211472.png",
+    "f7321e2fb3e4bc46cec2f8cd8ca5793ddee1cf5e": "./icon_256x256.1967c3ebb28adf8078d6f5499babb6ba.png",
+    "21d7526ffc068bd2b492d3c8944b311ed0228bc5": "./icon_192x192.26f6854d66c3e6bb6eb4078870125f7b.png",
+    "f91df29154fcba0c77a76058e9284c3733904ad4": "./icon_128x128.b0e233c7fe08ed06ec948e8dac1ca9fb.png",
+    "3bbe328d05163216a6549a3aa47682023ce38ae0": "./icon_96x96.88af0d92fd935ecf067ca52a28d38246.png"
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "9/20/2017, 3:58:02 PM",
-=======
-    "c1d1d0c3bc0850a21b441d15d4624e4bb14fedc9": "./bundle.js",
-    "193de2931038b81ab2c567c432409a0b39baa799": "./"
-  },
-  "strategy": "changed",
-  "responseStrategy": "cache-first",
-  "version": "30/09/2017, 22:14:12",
->>>>>>> WIP - add dist
+  "version": "30/09/2017, 23:04:26",
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
   "relativePaths": true
