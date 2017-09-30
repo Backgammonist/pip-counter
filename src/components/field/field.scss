@@ -1,0 +1,54 @@
+@import '../../scss/variables';
+@import '../../scss/mixins';
+
+.field-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 36px;
+    align-items: center;
+
+    &:after {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 $field-width/2 120px $field-width/2;
+        border-color: transparent transparent $field-bgr transparent;
+        content: '';
+        position: absolute;
+        bottom: 18px;
+        left: 0;
+        z-index: -1;
+        opacity: 1;
+
+        .board--half__upper & {
+            transform: rotate(180deg);
+            top: 18px;
+        }
+
+    }
+
+    .board--half__lower &:nth-child(6) {
+        margin-right: $bar-width;
+    }
+
+    .board--half__upper &:nth-child(6) {
+        margin-left: $bar-width;
+    }
+
+    &__odd:after {
+        opacity: 0.5;
+    }
+  
+    .field-ordinal {
+        @extend .primary-font;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: $border-size;
+        background-color: white;
+        color: $bgr-light;
+        font-size: 12px;
+    }
+}

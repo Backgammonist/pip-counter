@@ -1,4 +1,4 @@
-import {printPip, shuffle} from '../../src/count';
+import {printPip, shuffle} from '../../src/services/count';
 import INITIAL_STATE from '../../fixtures/state';
 
 test('printing pip', () => {

@@ -1,0 +1,34 @@
+@import '../../scss/variables';
+
+.board {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 12 * $field-width + $bar-width;
+    max-height: $max-height;
+    border-left: $border-size solid white;
+    border-right: $border-size solid white;
+  
+    &--half {
+        display: flex;
+        min-height: 50%;
+  
+        &__lower .field-wrapper {
+            flex-direction: column-reverse;
+        }
+
+        &__upper {
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+        }
+    }
+
+    &-bar {
+        position: absolute;
+        width: $bar-width;
+        height: $max-height;
+        left: calc(50% - #{$bar-width}/2);
+        background: white;
+    }
+}
