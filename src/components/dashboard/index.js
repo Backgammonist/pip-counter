@@ -32,7 +32,7 @@ class Dashboard extends PureComponent {
 
 Dashboard.propTypes = {
     initialState: PropTypes.object.isRequired,
-    shuffle: PropTypes.function.isRequired,
+    shuffle: PropTypes.func.isRequired,
 };
 
 export default Dashboard;
