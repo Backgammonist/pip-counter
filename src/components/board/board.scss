@@ -9,6 +9,7 @@
     max-height: $max-height;
     border-left: $border-size solid white;
     border-right: $border-size solid white;
+    overflow: hidden;
   
     &--half {
         display: flex;

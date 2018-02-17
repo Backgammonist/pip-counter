@@ -12,7 +12,7 @@ const MAX_CHECKER_ON_POS = 4;
  * @param {array} state game state
  * @return {number}
  */
-function countPip(userType, state) {
+export function countPip(userType, state) {
     const currentState = immutableObject(state);
     return Object.keys(currentState).reduce((sum, key) => {
         const pointVal = (userType === 'player') ? key : Math.abs(key - 25);
