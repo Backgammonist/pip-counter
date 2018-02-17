@@ -16,7 +16,7 @@ var __wpo = {
   },
   "externals": [],
   "hashesMap": {
-    "126069e84f081bcc6fd7d6d8f62428696f04e26b": "./bundle.js",
+    "2abe8ac8eb8f7d30445cfd58eb9e0898000954e1": "./bundle.js",
     "623adf4c40be339634b0b5646640e0998d921f10": "./",
     "95bdc696e1afa24c010f0fdc23a8b3c2e1fed03c": "./manifest.d16933013fc11607a4e8612ffe428819.json",
     "0d29865083dad94ffc8bb4c798efeef3d11ae04a": "./icon_512x512.aeda15d8739b8d42b64ceab65d3fbcb2.png",
@@ -28,7 +28,7 @@ var __wpo = {
   },
   "strategy": "changed",
   "responseStrategy": "cache-first",
-  "version": "10/12/2017, 10:49:07 AM",
+  "version": "2018-2-17 20:28:52",
   "name": "webpack-offline",
   "pluginVersion": "4.8.3",
   "relativePaths": true
