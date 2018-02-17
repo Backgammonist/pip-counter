@@ -22,7 +22,7 @@ Run eslint against the `/src` folder:
 
 1. `$ npm run build`
 2. commit the changes in the `/dist` folder
-3. `$ npm run deploy`
+3. `$ npm run deploy` (or `git push origin `git subtree split --prefix dist master`:gh-pages --force`)
 
 ### :green_apple: Testing ###
 Unit testing is done using [jest](https://facebook.github.io/jest/) mainly for its amazing automocking feature
