@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import PropTypes from 'prop-types';
+
 import Field from '../field';
 
 require('./board.scss');
@@ -20,5 +22,9 @@ class Board extends PureComponent {
         );
     }
 }
+
+Board.propTypes = {
+    initialState: PropTypes.object.isRequired,
+};
 
 export default Board;

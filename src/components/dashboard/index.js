@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 
+import PropTypes from 'prop-types';
+
 import Checker from '../checkers';
 
 import { countPip } from '../../services/count';
@@ -27,5 +29,10 @@ class Dashboard extends PureComponent {
         );
     }
 }
+
+Dashboard.propTypes = {
+    initialState: PropTypes.object.isRequired,
+    shuffle: PropTypes.function.isRequired,
+};
 
 export default Dashboard;

@@ -8,22 +8,22 @@ require('./App.scss');
 
 export default class App extends Component {
     constructor(props) {
-        super(props)
+        super(props);
 
         this.state = {
             isDashBoardVisible: false,
             board: shuffle(),
-        }
+        };
 
-        this.onClick = this.onClick.bind(this)
-        this.shuffle = this.shuffle.bind(this)
+        this.onClick = this.onClick.bind(this);
+        this.shuffle = this.shuffle.bind(this);
     }
 
     onClick() {
         this.setState(() => {
             return {
                 isDashBoardVisible: !this.state.isDashBoardVisible
-            }
+            };
         });
     }
 
@@ -32,7 +32,7 @@ export default class App extends Component {
             return {
                 isDashBoardVisible: false,
                 board: shuffle(),
-            }
+            };
         });
     }
 
