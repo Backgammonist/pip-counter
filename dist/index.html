@@ -1,13 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
-    <title>Backgammonist PIP counter</title>
-  </head>
-  <body>
-      <div id="app"></div>
-      <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="theme-color" content="#523da5" />
+  <link rel="manifest" href="manifest.json">
+  <title>Backgammonist PIP counter</title>
+  <style>
+    html,
+    body,
+    #app,
+    .App {
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      background: linear-gradient(to bottom right, $bgr-light, $bgr-dark);
+    }
+
+    html,
+    body,
+    #app,
+    .App {
+      height: 100%;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+
+
+      background: linear-gradient(to bottom right, #5893d1, #523da5);
+    }
+
+    .ellipsis-cont {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ellipsis {
+      display: inline-block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+    }
+
+    .ellipsis div {
+      position: absolute;
+      top: 27px;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #fff;
+      animation-timing-function: cubic-bezier(0, 1, 1, 0);
+    }
+
+    .ellipsis div:nth-child(1) {
+      left: 6px;
+      animation: ellipsis1 0.6s infinite;
+    }
+
+    .ellipsis div:nth-child(2) {
+      left: 6px;
+      animation: ellipsis2 0.6s infinite;
+    }
+
+    .ellipsis div:nth-child(3) {
+      left: 26px;
+      animation: ellipsis2 0.6s infinite;
+    }
+
+    .ellipsis div:nth-child(4) {
+      left: 45px;
+      animation: ellipsis3 0.6s infinite;
+    }
+
+    @keyframes ellipsis1 {
+      0% {
+        transform: scale(0);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes ellipsis3 {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(0);
+      }
+    }
+
+    @keyframes ellipsis2 {
+      0% {
+        transform: translate(0, 0);
+      }
+      100% {
+        transform: translate(19px, 0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="ellipsis-cont">
+      <div class="ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="manup.js"></script>
+  <script>
+    if (navigator.serviceWorker.controller) {
+      console.log('Active service worker found, no need to register')
+    } else {
+      navigator.serviceWorker.register('sw.js', {
+        scope: './'
+      }).then(function (reg) {
+        console.log('Service worker has been registered for scope:' + reg.scope);
+      });
+    }
+  </script>
+</body>
+
 </html>
