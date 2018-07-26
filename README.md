@@ -11,27 +11,27 @@
 
 Running the up in local environment: 
 1. clone the repo
-2. `$ npm install`
-3. `$ npm run dev`
+2. `$ yarn`
+3. `$ yarn dev`
 
 Run eslint against the `/src` folder:
 
-`$ npm run eslint`
+`$ yarn eslint`
 
 ### 🚀 Deployment ###
 
-1. `$ npm run build`
+1. `$ yarn build`
 2. commit the changes in the `/dist` folder
-3. `$ npm run deploy` (or `git push origin `git subtree split --prefix dist master`:gh-pages --force`)
+3. `$ yarn deploy` (or `git push origin `git subtree split --prefix dist master`:gh-pages --force`)
 
 ### :green_apple: Testing ###
 Unit testing is done using [jest](https://facebook.github.io/jest/) mainly for its amazing automocking feature
 
 run unit all tests:
-`$ npm test`
+`$ yarn test`
 
 run unit test with coverage:
-`$ npm run test:coverage`
+`$ yarn test:coverage`
 
 setup test watch:
-`$ npm run test:watch`
+`$ yarn test:watch`
