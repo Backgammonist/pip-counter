@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   mode: "development",
   module: {
@@ -15,6 +17,9 @@ module.exports = {
       },
       {
           test: /\.scss$/,
+          include: [
+                path.resolve(__dirname, 'src')
+          ],
           use: [ 'style-loader', 'css-loader', 'sass-loader' ]
       }
     ]

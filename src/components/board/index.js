@@ -10,7 +10,7 @@ class Board extends PureComponent {
     render() {
         const fieldKeys = Object.keys(this.props.initialState);
         return (
-            <div className="board" onClick={this.onClick}>
+            <div className="board" onClick={this.props.onClick}>
                 <div className="board--half board--half__lower">
                     {fieldKeys.slice(0, fieldKeys.length/2).map(key => <Field key={key} {...this.props.initialState[key]} ordinal={key} />)}
                 </div>
