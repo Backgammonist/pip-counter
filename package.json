@@ -10,7 +10,7 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "eslint": "eslint ./src/",
-    "prepush": "test && eslint",
+    "prepush": "npm run test && npm run eslint",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {

@@ -4,7 +4,8 @@ import {
     shuffle as _shuffle
 } from 'lodash';
 
-const MAX_CHECKER_ON_POS = 4;
+const MAX_CHECKER_WEIGHT = [1, 2, 2, 2, 2, 2, 2, 3, 3, 3, 4, 5]
+const MAX_CHECKER_ON_POS = () => MAX_CHECKER_WEIGHT[Math.floor(Math.random()*MAX_CHECKER_WEIGHT.length)];
 
 /**
  * Count the point value of checkers in game based on the user's type
@@ -67,10 +68,20 @@ export function shuffle(secondRun, state) {
     const userType = secondRun ? 'opponent' : 'player';
     let checkerCount = 15;
     let currentState = state || emptyState(INITIAL_STATE);
+    let pos = 0
 
     while (checkerCount > 0) {
-        const checkersOnPos = getCheckersOnPos(checkerCount);
-        const pos = findRandEmpty(currentState);
+        let checkersOnPos = getCheckersOnPos(checkerCount)
+        if (checkerCount === 15) {
+            pos = Math.ceil(Math.random()*6)
+        } else if (checkerCount > 5) {
+            pos = pos + 1
+        } else {
+            pos = findRandEmpty(currentState);
+
+
+        }
+
         currentState[pos][userType] = checkersOnPos;
         checkerCount -= checkersOnPos;
     }
@@ -88,8 +99,11 @@ export function shuffle(secondRun, state) {
  * @return {number} number of checkers
  */
 function getCheckersOnPos(checkerCount) {
+    const maxPosition = MAX_CHECKER_ON_POS()
+    
     const checkers = Math.ceil(Math.random() * checkerCount);
-    return (checkers > MAX_CHECKER_ON_POS) ? MAX_CHECKER_ON_POS : checkers;
+    return (checkers > maxPosition 
+) ? maxPosition : checkers;
 }
 /**
  * return the key of a random non-empty slot of the given state
