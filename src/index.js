@@ -1,7 +1,7 @@
-import React from 'react';
-import {render} from 'react-dom';
-import App from './components/App';
+import React from 'react'
+import { render } from 'react-dom'
+import App from './components/App'
 
-require('./main.scss');
+require('./main.scss')
 
-render(<App/>, document.getElementById('app'));
+render(<App />, document.getElementById('app'))

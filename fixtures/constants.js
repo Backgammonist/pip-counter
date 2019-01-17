@@ -1,5 +1,5 @@
-const GAME_TITLE = 'Backgammon Toolbox';
+const GAME_TITLE = "Backgammon Toolbox";
 
 module.exports = {
-    GAME_TITLE
+  GAME_TITLE
 };

@@ -1,17 +1,15 @@
-import PropTypes from 'prop-types';
-import React, { PureComponent } from 'react';
-import './checker.scss';
+import PropTypes from 'prop-types'
+import React, { PureComponent } from 'react'
+import './checker.scss'
 
 class Checker extends PureComponent {
-    render () {
-        return (
-            <div className={`checker checker__${this.props.playerType}`}></div>
-        );
-    }
+  render() {
+    return <div className={`checker checker__${this.props.playerType}`} />
+  }
 }
 
 Checker.propTypes = {
-    playerType: PropTypes.string
-};
+  playerType: PropTypes.string,
+}
 
-export default  Checker;
+export default Checker
