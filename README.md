@@ -1,6 +1,7 @@
 # Backgammon PIP counter #
 
 <!-- [![Build Status](https://travis-ci.org/Backgammon-Bandits/pip-counter.svg?branch=master)](https://travis-ci.org/Backgammon-Bandits/pip-counter) -->
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 [live demo](https://backgammonist.github.io/pip-counter/)
