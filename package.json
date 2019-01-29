@@ -4,8 +4,8 @@
   "private": true,
   "description": "pip counter for backgammon",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --hot --open",
+    "build": "webpack --config webpack.prod.js",
+    "dev": "webpack-dev-server --open --hot --config webpack.dev.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
@@ -44,7 +44,8 @@
     "style-loader": "^0.18.2",
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.14"
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1"
   },
   "dependencies": {
     "react": "^16.4.1",

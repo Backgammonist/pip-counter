@@ -1,19 +1,20 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   entry: {
     app: "./src/index.js"
   },
   output: {
-    path: __dirname + "./dist",
-    filename: "index_bundle.js"
+    filename: "[name].bundle.js",
+    path: path.resolve(__dirname, "dist")
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "The Backgammonist - PIP counter"
+      title: "The Backgammonist - PIP counter",
+      template: "./src/template.html"
     })
   ],
-  devtool: "inline-source-map",
   module: {
     rules: [
       {
