@@ -4,14 +4,14 @@
   "private": true,
   "description": "pip counter for backgammon",
   "scripts": {
-    "build": "webpack --mode=production",
-    "dev": "webpack-dev-server && webpack watch",
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --hot --open",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "eslint": "eslint ./src/",
     "prepush": "npm run test && npm run eslint",
-    "precommit" : "npx prettier --write '**/*.js'",
+    "precommit": "npx prettier --write '**/*.js'",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "css-loader": "^0.28.7",
     "eslint": "^4.6.1",
     "eslint-plugin-react": "^7.3.0",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "jest": "^20.0.4",
     "jest-cli": "^23.6.0",

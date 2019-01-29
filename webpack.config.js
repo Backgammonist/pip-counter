@@ -1,17 +1,19 @@
-const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
     app: "./src/index.js"
   },
-  devtool: "inline-source-map",
-  plugins: [new webpack.HotModuleReplacementPlugin()],
-  devServer: {
-    contentBase: "./dist",
-    hot: true,
-    port: 9000
+  output: {
+    path: __dirname + "./dist",
+    filename: "index_bundle.js"
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: "The Backgammonist - PIP counter"
+    })
+  ],
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
