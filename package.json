@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Backgammon-Bandits/pip-counter.git"
+    "url": "git+https://github.com/Backgammonist/pip-counter.git"
   },
   "author": "Laszlo Heves <heves.laszlo@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Backgammon-Bandits/pip-counter/issues"
+    "url": "https://github.com/Backgammonist/pip-counter/issues"
   },
-  "homepage": "https://github.com/Backgammon-Bandits/pip-counter#readme",
+  "homepage": "https://github.com/Backgammonist/pip-counter#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
